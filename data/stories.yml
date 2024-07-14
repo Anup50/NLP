@@ -1,0 +1,41 @@
+version: "2.0"
+stories:
+  - story: greet path
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  - story: goodbye path
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  - story: ask_ticket_price path
+    steps:
+    - intent: ask_ticket_price
+    - action: utter_ticket_price
+
+  - story: ask_opening_hours path
+    steps:
+    - intent: ask_opening_hours
+    - action: utter_opening_hours
+
+  - story: ask_location path
+    steps:
+    - intent: ask_location
+    - action: utter_location
+
+  - story: ask_contact path
+    steps:
+    - intent: ask_contact
+    - action: utter_contact
+
+  - story: ask_artifact_info path
+    steps:
+    - intent: ask_artifact_info
+    - action: action_artifact_info
+
+  - story: ask_gallery_info path
+    steps:
+    - intent: ask_gallery_info
+    - action: action_gallery_info

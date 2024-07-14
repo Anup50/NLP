@@ -1,0 +1,47 @@
+intents:
+  - greet
+  - goodbye
+  - ask_ticket_price
+  - ask_opening_hours
+  - ask_location
+  - ask_contact
+  - ask_artifact_info
+  - ask_gallery_info
+
+entities:
+  - artifact
+  - gallery
+
+slots:
+  artifact:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: artifact
+  gallery:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gallery
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to the Grand Heritage Museum. How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+  utter_ticket_price:
+    - text: "The ticket prices are as follows: Adults: $15, Seniors: $12, Students: $10, Children: $8, and free for children under 5 years and museum members."
+  utter_opening_hours:
+    - text: "The museum is open from 9AM to 5PM."
+  utter_location:
+    - text: "The Grand Heritage Museum is located at 123 Museum Avenue, Historical City, Country."
+  utter_contact:
+    - text: "You can contact us at +123-456-7890 or visit our website at www.grandheritagemuseum.com."
+  utter_artifact_info:
+    - text: "The {artifact} is located in {gallery}."
+  utter_gallery_info:
+    - text: "The {gallery} contains {artifact_list}."
+
+actions:
+  - action_artifact_info
+  - action_gallery_info

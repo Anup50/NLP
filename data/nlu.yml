@@ -1,0 +1,61 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+
+  - intent: ask_ticket_price
+    examples: |
+      - How much is the ticket?
+      - What is the ticket price?
+      - How much does it cost to enter?
+
+  - intent: ask_opening_hours
+    examples: |
+      - What time does the museum open?
+      - When does the museum open?
+      - What are the opening hours of the museum?
+      - Can you tell me the opening hours?
+      - When is the museum open?
+      - When does the museum start its operations?
+      - What time do you open?
+      - Opening hours?
+      - What time do you close?
+      - When does the museum close?
+      - What are your hours of operation?
+      - What time does the museum open and close?
+      - Is the museum open and close?
+      
+
+
+  - intent: ask_location
+    examples: |
+      - Where is the museum located?
+      - What is the address of the museum?
+      - How do I get to the museum?
+
+  - intent: ask_contact
+    examples: |
+      - How can I contact the museum?
+      - What is the museum's phone number?
+      - Can you give me the contact details?
+
+  - intent: ask_artifact_info
+    examples: |
+      - Tell me about the Mesopotamian Clay Tablet
+      - Where can I find the Egyptian Sarcophagus?
+      - What is the significance of the Chinese Bronze Vessels?
+
+  - intent: ask_gallery_info
+    examples: |
+      - What can I see in Gallery A?
+      - Tell me about the exhibits in Gallery B
+      - What artifacts are in the Renaissance Art gallery?
